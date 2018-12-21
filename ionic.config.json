@@ -1,0 +1,7 @@
+{
+  "name": "./esp32_controle",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
