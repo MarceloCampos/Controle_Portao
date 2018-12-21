@@ -12,6 +12,7 @@ import { AlertController } from 'ionic-angular';
 //  imports: ... HttpClientModule ...
 //  providers: ... HttpClientModule...
 
+// Versão GitHub com Fellype Cazorino
 
 @Component({
  selector: 'page-home',
