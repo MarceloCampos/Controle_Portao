@@ -13,6 +13,12 @@ import { AlertController } from 'ionic-angular';
 //  providers: ... HttpClientModule...
 
 // Versão GitHub com Fellype Cazorino
+// para gerar www novamente :
+//  npm install
+//  ionic serve
+//  ionic cordova prepare
+//
+
 
 @Component({
  selector: 'page-home',
