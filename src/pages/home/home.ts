@@ -17,7 +17,6 @@ import { AlertController } from 'ionic-angular';
 //  npm install
 //  ionic serve
 //  ionic cordova prepare
-//
 
 
 @Component({
@@ -25,8 +24,8 @@ import { AlertController } from 'ionic-angular';
  templateUrl: 'home.html'
 })
 
-export class HomePage 
-{
+export class HomePage {
+  nivel: any;
 
   constructor(public navCtrl: NavController, public http: HttpClient, private storage: Storage, public alertCtrl: AlertController) 
   {
@@ -48,6 +47,12 @@ export class HomePage
   _deviceIpSet : string;
   _dataMater : string;
 
+  onSliderChanged() {
+    if (this.nivel == 100) {
+      this.get_Url('/rele_pulse');
+    }
+  }
+  
 Storage_Save(dataToSave : string)  
 { 
    // set a key/value
@@ -56,7 +61,7 @@ Storage_Save(dataToSave : string)
 
   return;
 }
- 
+
 Storage_Load(keySearch : string)  
 {
   // Or to get a key/value pair
